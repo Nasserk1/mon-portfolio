@@ -8,10 +8,20 @@ export default function IntroCodeBlock() {
 /**
  * Hello World !!!
  * Bienvenue sur mon portfolio !
- * Je suis un développeur web passionné par la création de sites web modernes et fonctionnels.
- * Sur ce site, vous trouverez une sélection de mes projets les plus récents,
- * ainsi que des informations sur mes compétences et mon parcours professionnel.
- * N'hésitez pas à parcourir les différentes sections pour en savoir plus sur moi et mes réalisations.
+ *
+ * Je suis actuellement en reconversion professionnelle
+ * et en formation pour valider le Titre Professionnel
+ * de Concepteur Développeur d’Applications (CDA).
+ *
+ * Passionné par le développement web, j’apprends à concevoir
+ * et développer des applications modernes, performantes
+ * et centrées sur l’expérience utilisateur.
+ *
+ * Vous trouverez ici mes projets récents,
+ * mes compétences en évolution,
+ * ainsi qu’un aperçu de mon parcours et de ma transition vers ce métier.
+ *
+ * Merci de votre visite et bonne exploration !
  */
 `;
 

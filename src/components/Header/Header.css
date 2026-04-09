@@ -1,18 +1,65 @@
-.navbar a {
-    position: relative;
-    font-size: 28px;
-    text-decoration: none;
-    color: rgb(26, 0, 103);
-    font-weight: 600;
-    padding: 50px;
-    margin-top: 30px;
+/* ============================
+   HEADER GLOBAL
+   ============================ */
+
+header {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #d9c1c1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* ============================
+   TITRE + ICÔNE
+   ============================ */
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Titre {
+    font-size: 45px;   /* taille augmentée */
+    font-weight: 700;
+    color: rgb(26, 0, 103);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 45px;
+}
+
+/* ============================
+   NAVBAR
+   ============================ */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(26, 0, 103);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Surlignage animé */
 .navbar a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 40px; /* ajuste selon ton padding */
+    bottom: -5px;
     width: 0%;
     height: 3px;
     background: rgb(26, 0, 103);
@@ -23,25 +70,49 @@
     width: 100%;
 }
 
-#Titre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(87, 9, 48);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 45px;
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+
+/* TABLETTE */
+@media (max-width: 1024px) {
+    #Titre {
+        font-size: 38px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .navbar {
+        gap: 25px;
+    }
 }
-Header {
-    background-color: rgb(235, 232, 227);
-    border: 4px solid blue;
-    border-radius: 2%;
-    height: 110px;
-    margin-bottom: 20px;
-}
-.icon {
-    
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    margin-left: 25px;
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    #Titre {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 32px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 8px;
+    }
 }
