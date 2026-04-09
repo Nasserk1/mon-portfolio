@@ -11,7 +11,7 @@ export function Header() {
     </div>
     <nav className="navbar">
           <a href="#hero">Accueil</a>
-          <a href="#skills">Compétences</a>
+          <a href="#skills">Compétences développées</a>
           <a href="#about">À propos</a>
           <a href="#contact">Contact</a>
         
