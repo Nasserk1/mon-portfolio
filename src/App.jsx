@@ -1,18 +1,24 @@
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
 import { Body } from './components/Body/Body';
-import { Footer } from './components/Footer/Footer.jsx';
-
+import {Skills} from './pages/Skills'; // Import de ta nouvelle page
 
 function App() {
-  return (  
-    <>
+  return (
+    <Router>
       <Header />
-      <Body />
+      
+      <Routes>
+        {/* Route pour la page d'accueil (ton Body actuel) */}
+        <Route path="/" element={<Body />} />
+        
+        {/* Route pour ta page de compétences */}
+        <Route path="/skills" element={<Skills />} />
+      </Routes>
+
       <Footer />
-      {/* <Contact />
-      <Body /> */}
-    </>
+    </Router>
   );
 }
 

@@ -1,0 +1,82 @@
+h1 {
+    color :rgb(60, 40, 150);
+    text-align: center;
+    width: 100%;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'aller à la ligne si pas assez de place */
+    gap: 30px;       /* Espace entre les cartes */
+    justify-content: center;
+    padding: 20px;
+}
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgb(220, 220, 230);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    
+    /* Calcul de largeur pour 3 colonnes */
+    flex: 1 1 calc(45% - 30px); 
+    min-width: 300px;
+    max-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* Images uniformisées */
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover; /* Recadre proprement */
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: rgb(26, 0, 103);
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    flex-grow: 1; /* Pousse le lien vers le bas */
+}
+
+/* Bouton d'action */
+.card a {
+    display: block;
+    background-color: rgb(26, 0, 103);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.card a:hover {
+    background-color: rgb(60, 40, 150);
+}
+
+/* --- Responsive Body --- */
+@media (max-width: 1024px) {
+    .card { flex: 1 1 calc(50% - 30px); } /* 2 colonnes sur tablette */
+}
+
+@media (max-width: 650px) {
+    .card { flex: 1 1 100%; max-width: 100%; } /* 1 colonne sur mobile */
+    #projects { gap: 20px; }
+}

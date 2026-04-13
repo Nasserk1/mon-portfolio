@@ -9,7 +9,7 @@ export default function IntroCodeBlock() {
  * Hello World !!!
  * Bienvenue sur mon portfolio !
  *
- * Je suis actuellement en reconversion professionnelle
+ * Je suis Nasser KHELIFI et je suis actuellement en reconversion professionnelle
  * et en formation pour valider le Titre Professionnel
  * de Concepteur Développeur d’Applications (CDA).
  *

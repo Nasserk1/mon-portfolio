@@ -1,5 +1,6 @@
 import './Header.css';
 import { FcAddressBook } from "react-icons/fc";
+import { Link } from 'react-router-dom';
 
 
 export function Header() {
@@ -10,12 +11,10 @@ export function Header() {
     
     </div>
     <nav className="navbar">
-          <a href="#hero">Accueil</a>
-          <a href="#skills">Compétences développées</a>
-          <a href="#about">À propos</a>
-          <a href="#contact">Contact</a>
-        
-    </nav>
+        <Link to="/">Accueil</Link>
+        <Link to="/skills">Compétences développées</Link>
+        <Link to="#contact">Contact</Link>
+      </nav>
 
 
     </header>
