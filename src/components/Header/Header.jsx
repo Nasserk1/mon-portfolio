@@ -13,7 +13,7 @@ export function Header() {
     <nav className="navbar">
         <Link to="/">Accueil</Link>
         <Link to="/skills">Compétences développées</Link>
-        <Link to="#contact">Contact</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
 
 

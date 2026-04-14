@@ -1,3 +1,41 @@
+.main {
+    background-color: rgb(250, 250, 252); /* Gris très clair moderne */
+    color: rgb(30, 30, 30);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+.main-wrapper {
+    width: 100%;
+    min-height: 100vh; /* S'assure de couvrir toute la hauteur */
+    position: relative;
+    overflow: hidden; /* Important pour l'image */
+    /* Empêche les cartes de se superposer au footer */
+    padding-bottom: 60px; 
+}
+
+.main-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Intégration de l'image (Remplacez par votre chemin réel) */
+    background-image: url('../../src/assets/images/bgimage.jfif');
+    background-size: cover; /* Couvre tout l'espace */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat;
+    
+    /* Gère la transparence (le filigrane) */
+    opacity: 0.4; /* Très subtil (3%) */
+    
+    z-index: -1; /* Place l'image DERRIÈRE le contenu */
+}
 h1 {
     color :rgb(60, 40, 150);
     text-align: center;
@@ -18,8 +56,8 @@ h1 {
     
     /* Calcul de largeur pour 3 colonnes */
     flex: 1 1 calc(45% - 30px); 
-    min-width: 300px;
-    max-width: 450px;
+    min-width: 30%;
+    max-width: 45%;
 
     display: flex;
     flex-direction: column;
@@ -32,23 +70,13 @@ h1 {
     box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
-/* Images uniformisées */
-.card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover; /* Recadre proprement */
-    border-radius: 8px;
-    border: 1px solid #eee;
-    margin-bottom: 15px;
-}
-
 .card h3 {
     margin: 10px 0;
     color: rgb(26, 0, 103);
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 18px;
     color: #555;
     flex-grow: 1; /* Pousse le lien vers le bas */
 }

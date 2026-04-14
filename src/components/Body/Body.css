@@ -3,8 +3,8 @@
    ============================================================ */
 
 body {
-    background-color: rgb(250, 250, 252); /* Gris très clair moderne */
-    color: rgb(30, 30, 30);
+    /* background-color: rgb(250, 250, 252); /* Gris très clair moderne */
+    /* color: rgb(30, 30, 30); */ 
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ body {
     background-repeat: no-repeat;
     
     /* Gère la transparence (le filigrane) */
-    opacity: 0.25; /* Très subtil (3%) */
+    opacity: 0.4; /* Très subtil (3%) */
     
     z-index: -1; /* Place l'image DERRIÈRE le contenu */
 }
