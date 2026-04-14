@@ -1,0 +1,92 @@
+/* ============================================================
+   FOOTER SECTION - CORRIGÉ
+   ============================================================ */
+
+footer {
+    width: 100%;
+    /* Empêche le footer de dépasser de l'écran à cause du padding */
+    box-sizing: border-box; 
+    background-color: #ffffff;
+    border-top: 1px solid rgb(220, 220, 230);
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* On utilise 20px de padding interne pour ne pas coller aux bords sur mobile */
+    padding: 0 20px; 
+    display: flex;
+    /* Aligne le titre à gauche et les liens à droite proprement */
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petit écran */
+    gap: 20px;
+    color: rgb(26, 0, 103);
+}
+
+#Titre2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(26, 0, 103);
+    /* Flexbox ici pour aligner le texte et l'icône @ parfaitement */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Liens du Footer --- */
+.footer-links {
+    display: flex;
+    gap: 30px; /* Espace équilibré entre les liens */
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(26, 0, 103);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    white-space: nowrap; /* Empêche le lien de se couper en deux */
+}
+
+/* --- Effets au survol --- */
+.footer-links a:hover {
+    color: rgb(60, 40, 150);
+    transform: translateY(-2px);
+}
+
+/* Barre de soulignement animée */
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(60, 40, 150);
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* --- Responsive Footer (Mobile & Tablette) --- */
+@media (max-width: 768px) {
+    .footer-container {
+        /* On centre tout verticalement sur mobile */
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

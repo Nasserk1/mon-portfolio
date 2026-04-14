@@ -1,0 +1,110 @@
+.main {
+    background-color: rgb(250, 250, 252); /* Gris très clair moderne */
+    color: rgb(30, 30, 30);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+.main-wrapper {
+    width: 100%;
+    min-height: 100vh; /* S'assure de couvrir toute la hauteur */
+    position: relative;
+    overflow: hidden; /* Important pour l'image */
+    /* Empêche les cartes de se superposer au footer */
+    padding-bottom: 60px; 
+}
+
+.main-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Intégration de l'image (Remplacez par votre chemin réel) */
+    background-image: url('../../src/assets/images/bgimage.jfif');
+    background-size: cover; /* Couvre tout l'espace */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat;
+    
+    /* Gère la transparence (le filigrane) */
+    opacity: 0.4; /* Très subtil (3%) */
+    
+    z-index: -1; /* Place l'image DERRIÈRE le contenu */
+}
+h1 {
+    color :rgb(60, 40, 150);
+    text-align: center;
+    width: 100%;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'aller à la ligne si pas assez de place */
+    gap: 30px;       /* Espace entre les cartes */
+    justify-content: center;
+    padding: 20px;
+}
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgb(220, 220, 230);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    
+    /* Calcul de largeur pour 3 colonnes */
+    flex: 1 1 calc(45% - 30px); 
+    min-width: 30%;
+    max-width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: rgb(26, 0, 103);
+}
+
+.card p {
+    font-size: 18px;
+    color: #555;
+    flex-grow: 1; /* Pousse le lien vers le bas */
+}
+
+/* Bouton d'action */
+.card a {
+    display: block;
+    background-color: rgb(26, 0, 103);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.card a:hover {
+    background-color: rgb(60, 40, 150);
+}
+
+/* --- Responsive Body --- */
+@media (max-width: 1024px) {
+    .card { flex: 1 1 calc(50% - 30px); } /* 2 colonnes sur tablette */
+}
+
+@media (max-width: 650px) {
+    .card { flex: 1 1 100%; max-width: 100%; } /* 1 colonne sur mobile */
+    #projects { gap: 20px; }
+}
