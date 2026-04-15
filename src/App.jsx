@@ -4,7 +4,7 @@ import { Footer } from './components/Footer/Footer';
 import { Body } from './components/Body/Body';
 import {Skills} from './pages/skills/Skills'; // Import de ta nouvelle page
 import { Contact } from './pages/contact/Contact'; // Import de ta page de contact
-
+//redeploy
 function App() {
   return (
     <Router>
