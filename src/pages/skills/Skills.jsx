@@ -35,7 +35,7 @@ export function Skills() {
                     </p>
                    
                      <a
-                      href="src\assets\images\CVDev.PNG"
+                      href="src/assets/images/CVDev.PNG"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -71,7 +71,7 @@ export function Skills() {
                     <br />
                     <strong>@- Conception de contenus IA :</strong>  Utilisation experte de LLM et d'outils génératifs (Claude, ChatGPT, Gamma) pour la création de supports pédagogiques.</p>
                     <a
-                      href="src\assets\images\CV-Formation 2026.pdf"
+                      href="src/assets/images/CV-Formation 2026.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -110,7 +110,7 @@ export function Skills() {
                     <strong>@- Engagement associatif :</strong> Participation active à la gouvernance de structures (Mission Locale, GEMTIC, AOFM) en tant que membre du bureau.
                    </p>
                    <a
-                      href="src\assets\images\CV ESS - Direction.pdf"
+                      href="src/assets/images/CV ESS - Direction.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
