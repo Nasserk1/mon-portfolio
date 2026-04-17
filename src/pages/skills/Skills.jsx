@@ -2,6 +2,7 @@ import "./Skills.css";
 import { Link } from 'react-router-dom';
 
 
+
 export function Skills() {
   return (
     <main className="main-wrapper">
@@ -34,13 +35,9 @@ export function Skills() {
                       <strong>@- Soft Skills issus de l'expérience :</strong> Pilotage de projets, gestion de processus et capacité d'adaptation aux nouveaux outils numériques.
                     </p>
                    
-                     <a
-                      href="src/assets/images/CVDev.PNG"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                     <a href={`${import.meta.env.BASE_URL}cv/CVDev.PNG`} target="_blank" rel="noopener noreferrer">
                       Voir mon CV orienté développement web
-                    </a>
+                      </a>
 
                   </div>
         
@@ -70,13 +67,10 @@ export function Skills() {
                     <strong>@- Management & Direction :</strong> Gestion administrative, financière et humaine d'établissements de formation (jusqu'à 35 ETP).
                     <br />
                     <strong>@- Conception de contenus IA :</strong>  Utilisation experte de LLM et d'outils génératifs (Claude, ChatGPT, Gamma) pour la création de supports pédagogiques.</p>
-                    <a
-                      href="src/assets/images/CV-Formation 2026.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Voir mon CV orienté formation
+                    <a href={`${import.meta.env.BASE_URL}cv/CV-Formation 2026.pdf`} target="_blank" rel="noopener noreferrer">
+                    Voir mon CV orienté formation
                     </a>
+                      
                   </div>
                     
                   {/* CARD 3 */}
@@ -109,12 +103,8 @@ export function Skills() {
                     <br />
                     <strong>@- Engagement associatif :</strong> Participation active à la gouvernance de structures (Mission Locale, GEMTIC, AOFM) en tant que membre du bureau.
                    </p>
-                   <a
-                      href="src/assets/images/CV ESS - Direction.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Voir mon CV orienté ESS et Direction
+                   <a href={`${import.meta.env.BASE_URL}cv/CV ESS - Direction.pdf`} target="_blank" rel="noopener noreferrer">
+                    Voir mon CV orienté ESS et Direction
                     </a>
                   </div>
         
