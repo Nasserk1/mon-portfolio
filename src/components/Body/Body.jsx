@@ -1,6 +1,6 @@
 import imageAdaopte from "../../assets/images/groupe-chats-chiens_87414-3270.jpg";
 import imageDataviz from "../../assets/images/istockphoto-530007161-170667a.jpg";
-import imageQuiz from "../../assets/images/Gemini_Generated_Image_jj7cbcjj7cbcjj7c.PNG";
+import délicesDeMira from "../../assets/images/logo-délices de Mira.jpg";
 import icons from "../../assets/icons/tableau-de-bord.gif";
 import IntroCodeBlock from "../IntroCodeBlock/IntroCodeBlock";
 import "./Body.css";
@@ -68,7 +68,7 @@ export function Body() {
 
           {/* CARD 3 */}
           <div className="card">
-            <img src={imageQuiz} alt="projet Ada Quiz Project" />
+            <img src={imageDelicesdeMira} alt="site vitrine les délices de Mira" />
             <h2>Projet Ada Quiz Project</h2>
             <p>
               ADA Quiz Project est une application de quiz dédiée à la géographie.
@@ -80,7 +80,7 @@ export function Body() {
               C’est un projet formateur qui illustre ma progression dans l’apprentissage du développement web et ma capacité à concevoir des applications dynamiques et fonctionnelles.
             </p>
             <a
-              href="https://github.com/Nasserk1/ADA-Quiz-Project"
+              href="src/assets/images/logo-délices de Mira.jpg"
               target="_blank" id="link-project-3"
               rel="noopener noreferrer"
             >
