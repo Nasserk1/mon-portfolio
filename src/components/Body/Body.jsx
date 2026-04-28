@@ -68,19 +68,31 @@ export function Body() {
 
           {/* CARD 3 */}
           <div className="card">
-            <img src={imageDelicesdeMira} alt="site vitrine les délices de Mira" />
-            <h2>Projet Ada Quiz Project</h2>
+            <img src={délicesDeMira} alt="site vitrine les délices de Mira" />
+            <h2>Projet Les Délices de Mira</h2>
             <p>
-              ADA Quiz Project est une application de quiz dédiée à la géographie.
-              Elle a été développée dans le cadre de ma formation en développement web, avec l’objectif de proposer un outil ludique permettant de tester ses connaissances sur les pays, les capitales et les frontières du monde.
-              <br />
-              L’application génère des questions aléatoires, calcule un score et offre une interface simple et intuitive pour rendre l’expérience agréable et accessible.
-              Ce projet m’a permis de renforcer mes compétences en JavaScript, en logique applicative et en manipulation du DOM, tout en travaillant sur une approche pédagogique et interactive.
-              <br />
-              C’est un projet formateur qui illustre ma progression dans l’apprentissage du développement web et ma capacité à concevoir des applications dynamiques et fonctionnelles.
+              Les Délices de Mira est un site vitrine e‑commerce dédié à la pâtisserie orientale artisanale. Réalisé dans un cadre personnel, le projet met en avant un univers chaleureux et authentique, inspiré des traditions culinaires maghrébines.
+              L’objectif était de créer une expérience simple, élégante et immersive permettant aux visiteurs de découvrir les créations, comprendre le savoir‑faire, et commander facilement des pâtisseries faites maison.
+                 <br />
+              Le site présente une sélection de spécialités (makrouts, cornes de gazelles, dziriettes, sablés algériens, etc.), des informations sur la livraison locale autour de Vienne / Saint‑Romain‑en‑Gal, ainsi qu’un formulaire de contact pour les commandes personnalisées.
+              L’ensemble vise à refléter la fraîcheur, la qualité et la passion qui caractérisent l’artisanat culinaire de Mira 
+                <br /> <br />
+              Stack technique :
+                <br />
+              Webador (CMS no‑code)
+              Utilisé pour la création du site, la gestion du contenu, la mise en page et l’hébergement.
+                <br />
+              HTML / CSS personnalisés  
+              Ajustements visuels pour harmoniser la charte graphique et optimiser la présentation des produits.
+                <br />
+              Formulaire intégré Webador  
+              Pour la gestion des messages et demandes clients.
+                <br />
+              Optimisation SEO de base  
+              Titres, descriptions, structure des pages et performance générale.
             </p>
             <a
-              href="src/assets/images/logo-délices de Mira.jpg"
+              href="https://www.lesdelicesdemira.fr/"
               target="_blank" id="link-project-3"
               rel="noopener noreferrer"
             >
