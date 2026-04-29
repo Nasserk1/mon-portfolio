@@ -38,7 +38,7 @@ export function Body() {
               d'informations ou pour organiser une visite.
             </p>
             <a
-              href="https://github.com/Nasserk1/adaopte"
+              href="https://adaopte-2.onrender.com/"
               target="_blank" id="link-project-1"
               rel="noopener noreferrer"
             >
