@@ -58,7 +58,7 @@ export function Body() {
               complexes pour faciliter leur compréhension.
             </p>
             <a
-              href="https://github.com/Nasserk1/dataviz-project"
+              href="https://dataviz-project-vert.vercel.app/"
               target="_blank" id="link-project-2"
               rel="noopener noreferrer"
             >
