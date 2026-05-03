@@ -35,7 +35,7 @@ export function Skills() {
                       <strong>@- Soft Skills issus de l'expérience :</strong> Pilotage de projets, gestion de processus et capacité d'adaptation aux nouveaux outils numériques.
                     </p>
                    
-                     <a href={`${import.meta.env.BASE_URL}cv/CVDev.PNG`} target="_blank" rel="noopener noreferrer">
+                     <a href={`${import.meta.env.BASE_URL}cv/CV dev 2026.pdf`} target="_blank" rel="noopener noreferrer">
                       Voir mon CV orienté développement web
                       </a>
 
@@ -103,7 +103,7 @@ export function Skills() {
                     <br />
                     <strong>@- Engagement associatif :</strong> Participation active à la gouvernance de structures (Mission Locale, GEMTIC, AOFM) en tant que membre du bureau.
                    </p>
-                   <a href={`${import.meta.env.BASE_URL}cv/CV ESS - Direction.pdf`} target="_blank" rel="noopener noreferrer">
+                   <a href={`${import.meta.env.BASE_URL}cv/CV ESS - Direction.pdf`} target="_blank" rel="noopener noreferrer"> 
                     Voir mon CV orienté ESS et Direction
                     </a>
                   </div>
